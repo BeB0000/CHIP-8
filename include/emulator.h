@@ -1,3 +1,9 @@
+// -------------------
+// Copyright @BeB0000
+// UNDER MIT LICENSE
+// include/emulator.h
+// --------------------
+
 // libs
 #include <stdio.h>
 #include <stdlib.h>
