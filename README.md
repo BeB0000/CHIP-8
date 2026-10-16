@@ -1,7 +1,17 @@
 # CHIP-8 Emulator
 
 A simple CHIP-8 emulator written in C using SDL2.  
-The name **TSHIP-8** is just a joke; this is a CHIP-8 emulator.
+The name **TSHIP-8** in the code is just a joke; this is a CHIP-8 emulator.
+
+## Features
+
+- Full CHIP-8 CPU core (fetch / decode / execute)
+- 64x32 monochrome display, 10x pixel scale
+- 16-key QWERTY-mapped keypad
+- Delay timer at 60 Hz
+- Sound timer with real 440 Hz square-wave audio output via SDL2
+- Font sprites (0-F) loaded at `0x000`
+- Simple ROM loading from the command line
 
 ## Requirements
 
@@ -36,8 +46,6 @@ Use MSYS2 / MinGW and install the SDL2 development package.
 
 ## Build
 
-To build the emulator binary:
-
 ```sh
 make all
 ```
@@ -49,8 +57,6 @@ build/emu
 ```
 
 ## Clean
-
-To remove the build directory and compiled files:
 
 ```sh
 make clean
@@ -70,8 +76,6 @@ Example:
 
 ## Controls
 
-The CHIP-8 hex keypad is mapped to QWERTY like this:
-
 ```text
 CHIP-8 keypad      Keyboard
 1 2 3 C            1 2 3 4
@@ -80,9 +84,12 @@ CHIP-8 keypad      Keyboard
 A 0 B F            Z X C V
 ```
 
-## ROMs
+## Screenshots
 
-You can find CHIP-8 ROMs here:
+![Demo 1](screenshots/demo1.png)
+![Demo 2](screenshots/demo2.png)
+
+## ROMs
 
 - https://github.com/kripod/chip8-roms
 - https://github.com/JohnEarnest/chip8Archive
